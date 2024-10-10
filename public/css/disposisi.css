@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.disposisi-container {
+  width: 190mm; /* Lebar container untuk menyesuaikan dengan kertas A4 */
+  margin: auto;
+  border: 1px solid #000; /* Border di sekitar container */
+  padding: 10px; /* Padding dalam container yang lebih kecil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Menghindari elemen melampaui batas */
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.header img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.header-text {
+  flex-grow: 1;
+  text-align: left;
+  margin-top: 25px;
+}
+.header-text h2 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header-text p {
+  margin: 2px 0;
+}
+.content-section {
+  width: 100%;
+  border: 1px solid #000; /* Border di sekitar setiap section */
+  padding: 5px; /* Padding di dalam content section yang lebih kecil */
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  box-sizing: border-box; /* Menghitung padding dalam total lebar */
+}
+.content-section label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+.inline {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+.checkbox-group label {
+  font-weight: normal;
+}
+.checkbox-group input {
+  margin-right: 5px;
+}
+.signature-section {
+  margin-top: 20px;
+  text-align: right;
+  page-break-inside: avoid; /* Hindari pemotongan halaman di bagian ini */
+}
+.signature-section p {
+  margin-bottom: 1px;
+}
+.title {
+  text-align: center; /* Pusatkan teks */
+  font-size: 20px; /* Ukuran font judul */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  font-weight: bold; /* Berat font */
+}
+#printButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#printButton:hover {
+  background-color: #45a049;
+}
+
+/* Media query khusus untuk cetak */
+@media print {
+  body {
+      margin: 0; /* Hapus margin body */
+      padding: 0; /* Hapus padding body */
+  }
+  .disposisi-container {
+      width: 190mm; /* Lebar container untuk cetak */
+      border: 1px solid #000; /* Pastikan border muncul saat dicetak */
+      margin: 0;
+      padding: 10px; /* Padding agar lebih sesuai */
+      page-break-inside: avoid; /* Hindari pemotongan halaman */
+  }
+  .content-section {
+      border: 1px solid #000; /* Pastikan border muncul saat dicetak */
+  }
+  #printButton {
+      display: none; /* Sembunyikan tombol print saat dicetak */
+  }
+}
