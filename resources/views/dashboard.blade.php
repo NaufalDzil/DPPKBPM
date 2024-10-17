@@ -94,7 +94,7 @@
             <div class="icon">
               <i class="far fa-file"></i>
             </div>
-            <a href="{{route('sk.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-right"></i></a>
+            <a href="{{route('sk.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         
@@ -109,7 +109,7 @@
             <div class="icon">
               <i class="far fa-file"></i>
             </div>
-            <a href="{{route('mou.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-right"></i></a>
+            <a href="{{route('mou.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
@@ -124,7 +124,7 @@
             <div class="icon">
               <i class="far fa-file"></i>
             </div>
-            <a href="{{route('sppd.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-right"></i></a>
+            <a href="{{route('sppd.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
@@ -139,7 +139,7 @@
             <div class="icon">
               <i class="far fa-file"></i>
             </div>
-            <a href="{{route('st.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-right"></i></a>
+            <a href="{{route('st.index')}}" class="small-box-footer">Lihat <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
 

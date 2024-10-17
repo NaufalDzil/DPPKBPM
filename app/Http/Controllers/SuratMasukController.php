@@ -81,9 +81,4 @@ class SuratMasukController extends Controller
     {
     return view('suratmasuk.surat', compact('suratmasuk'));
     }
-
-    public function disposisi(SuratMasuk $suratmasuk)
-    {
-        return view('suratmasuk.disposisi', compact('suratmasuk'));
-    }
 }

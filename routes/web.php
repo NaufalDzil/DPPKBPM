@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DisposisiController;
 use App\Http\Controllers\MouController;
 use App\Http\Controllers\NodinController;
 use App\Http\Controllers\SkController;
@@ -19,7 +20,19 @@ Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('suratmasuk', SuratMasukController::class);
 Route::get('/suratmasuk/{suratmasuk}/edit', [SuratMasukController::class, 'edit'])->name('suratmasuk.edit');
 Route::get('/suratmasuk/{suratmasuk}/surat', [SuratMasukController::class, 'surat'])->name('suratmasuk.surat');
-Route::get('/suratmasuk/{suratmasuk}/disposisi', [SuratMasukController::class, 'disposisi'])->name('suratmasuk.disposisi');
+
+//Disposisi
+Route::get('/suratmasuk/{suratmasuk}/disposisi', [DisposisiController::class, 'index'])->name('disposisi.index');
+Route::get('/suratmasuk/{suratmasuk}/disposisi/cetak', [DisposisiController::class, 'cetak'])->name('disposisi.cetak');
+Route::get('/suratmasuk/{suratmasuk}/disposisi/create', [DisposisiController::class, 'create'])->name('disposisi.create');
+Route::post('/suratmasuk/{suratmasuk}/disposisi/create/store', [DisposisiController::class, 'store'])->name('disposisi.store');
+Route::get('/suratmasuk/{suratmasuk}/disposisi/edit', [DisposisiController::class, 'edit'])->name('disposisi.edit');
+Route::post('/suratmasuk/{suratmasuk}/disposisi/create/update', [DisposisiController::class, 'update'])->name('disposisi.update');
+
+// Route::resource('suratmasuk/{suratmasuk}/disposisi', DisposisiController::class)->except('show');
+// Route::get('/suratmasuk/{suratmasuk}/disposisi/cetak', [DisposisiController::class, 'cetak'])->name('disposisi.cetak');
+// Route::get('/suratmasuk/{suratmasuk}/disposisi/create', [DisposisiController::class, 'create'])->name('disposisi.create');
+// Route::get('/suratmasuk/{suratmasuk}/disposisi/edit', [DisposisiController::class, 'edit'])->name('disposisi.edit');
 
 //Surat Keluar
 Route::resource('suratkeluar', SuratKeluarController::class);

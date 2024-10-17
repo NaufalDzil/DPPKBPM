@@ -17,8 +17,9 @@ return new class extends Migration
             $table->string('alamat');
             $table->date('tanggal_surat');
             $table->string('nomor_surat')->unique();
-            $table->string('perihal');
+            $table->text('perihal');
             $table->string('surat')->nullable();
+            $table->string('disposisi')->nullable();
             $table->timestamps();
         });
     }

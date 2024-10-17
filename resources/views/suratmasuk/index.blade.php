@@ -57,7 +57,7 @@
                         <a href="{{ route('suratmasuk.surat', $row->id) }}" class="btn btn-outline-success btn-sm">
                             <i class="far fa-file-pdf"></i></i> Surat
                         </a>
-                        <a href="{{ route('suratmasuk.disposisi', $row->id) }}" class="btn btn-outline-primary btn-sm">
+                        <a href="{{ route('disposisi.index', $row->id) }}" class="btn btn-outline-primary btn-sm">
                           <i class="far fa-copy"></i></i> Disposisi
                       </a>
                     @endif

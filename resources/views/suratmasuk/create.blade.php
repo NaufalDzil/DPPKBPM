@@ -62,7 +62,7 @@
                             
                             <div class="form-group">
                               <label>Perihal :</label>
-                              <input type="text" name="perihal" class="form-control" placeholder="Perihal" required>
+                              <textarea name="perihal" class="form-control" placeholder="Perihal" style="height: 200px;" required></textarea>
                             </div>
 
                             <div class="form-group">

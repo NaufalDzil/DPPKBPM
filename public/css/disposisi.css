@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 .disposisi-container {
   width: 190mm; /* Lebar container untuk menyesuaikan dengan kertas A4 */
@@ -20,13 +20,12 @@ body {
 .header img {
   width: 100px;
   height: auto;
-  margin-right: 20px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .header-text {
   flex-grow: 1;
-  text-align: left;
+  text-align: center;
   margin-top: 25px;
 }
 .header-text h2 {
@@ -45,6 +44,14 @@ body {
   background: #f9f9f9;
   box-sizing: border-box; /* Menghitung padding dalam total lebar */
 }
+
+.content-section textarea{
+  width: 80%;
+  height: 105px;
+  font-family: Arial;
+  resize:none;
+}
+
 .content-section label {
   display: inline-block;
   width: 120px;

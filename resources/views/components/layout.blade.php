@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
@@ -15,7 +15,7 @@
     <!-- Toastr -->
     <link rel="stylesheet" href="{{asset('/AdminLTE/plugins/toastr/toastr.min.css')}}">
     {{-- Icon --}}
-    <link rel="icon" href="{{asset('/AdminLTE/dist/img/AdminLTELogo.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{asset('AdminLTE/docs/assets/img/logo.png')}}" type="image/x-icon">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
@@ -25,7 +25,7 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('/AdminLTE/dist/css/adminlte.min.css')}}">
     <!-- Include SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
 
 <!--
