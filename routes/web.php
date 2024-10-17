@@ -29,11 +29,6 @@ Route::post('/suratmasuk/{suratmasuk}/disposisi/create/store', [DisposisiControl
 Route::get('/suratmasuk/{suratmasuk}/disposisi/edit', [DisposisiController::class, 'edit'])->name('disposisi.edit');
 Route::post('/suratmasuk/{suratmasuk}/disposisi/create/update', [DisposisiController::class, 'update'])->name('disposisi.update');
 
-// Route::resource('suratmasuk/{suratmasuk}/disposisi', DisposisiController::class)->except('show');
-// Route::get('/suratmasuk/{suratmasuk}/disposisi/cetak', [DisposisiController::class, 'cetak'])->name('disposisi.cetak');
-// Route::get('/suratmasuk/{suratmasuk}/disposisi/create', [DisposisiController::class, 'create'])->name('disposisi.create');
-// Route::get('/suratmasuk/{suratmasuk}/disposisi/edit', [DisposisiController::class, 'edit'])->name('disposisi.edit');
-
 //Surat Keluar
 Route::resource('suratkeluar', SuratKeluarController::class);
 Route::get('/suratkeluar/{suratkeluar}/surat', [SuratKeluarController::class, 'surat'])->name('suratkeluar.surat');
